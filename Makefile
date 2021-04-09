@@ -2,7 +2,7 @@ OUT := rmtfs
 
 CFLAGS += -Wall -g -O2
 LDFLAGS += -lqrtr -ludev -lpthread
-prefix = /usr/local
+prefix = /usr
 bindir := $(prefix)/bin
 servicedir := $(prefix)/lib/systemd/system
 

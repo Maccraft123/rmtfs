@@ -80,7 +80,7 @@ static void rmtfs_open(int sock, const struct qrtr_packet *pkt)
 	resp.caller_id_valid = true;
 
 respond:
-	dbgprintf("[RMTFS] open %s => %d (%d:%d)\n",
+	printf("[RMTFS] open %s => %d (%d:%d)\n",
 		  req.path, caller_id, resp.result.result, resp.result.error);
 
 	len = qmi_encode_message(&resp_buf,
